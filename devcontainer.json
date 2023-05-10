@@ -1,0 +1,22 @@
+{
+	"name": "Python 3.8 for Django",
+	"dockerComposeFile": "docker-compose.yml",
+	"service": "app",
+	"workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ms-vscode-remote.remote-containers",
+				"ecmel.vscode-html-css",
+				"geddski.macros",
+				"ms-python.vscode-pylance",
+				"ms-python.python",
+				"vscodevim.vim",
+				"monosans.djlint",
+				"batisteo.vscode-django",
+				"ms-python.pylint"
+			]
+		}
+	},
+	"postCreateCommand": "pip install --user -r .devcontainer/requirements.txt"
+}

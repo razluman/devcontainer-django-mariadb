@@ -1,0 +1,14 @@
+black
+django==3.2.18
+django-cors-headers
+django-environ
+django-import-export
+django-filter
+django-rest-knox
+djangorestframework
+djlint
+drf-standardized-errors
+httpie
+pylint-django
+PyMySQL
+uritemplate
