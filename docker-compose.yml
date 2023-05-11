@@ -21,7 +21,7 @@ services:
     image: mariadb:latest
     restart: unless-stopped
     volumes:
-      - /data/mabox/mariadb:/var/lib/mysql
+      - ${MARIADB_VOLUME}:/var/lib/mysql
     environment:
       MARIADB_USER: "${MARIADB_USER}"
       MARIADB_PASSWORD: "${MARIADB_PASSWORD}"
