@@ -54,7 +54,13 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    "import_export",
+    "rest_framework",
+    "knox",
+    "drf_standardized_errors",
+    "corsheaders",
     "phonenumber_field",
+    "cma.apps.CmaConfig",
 ]
 
 MIDDLEWARE = [
