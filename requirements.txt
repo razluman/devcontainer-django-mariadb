@@ -4,6 +4,7 @@ django-cors-headers
 django-environ
 django-import-export
 django-filter
+django-phonenumber-field[phoneumberslite]
 django-rest-knox
 djangorestframework
 djlint
