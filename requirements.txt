@@ -5,6 +5,7 @@ django-environ
 django-import-export
 django-filter
 django-phonenumber-field[phoneumberslite]
+django-phonenumbers
 django-rest-knox
 djangorestframework
 djlint
