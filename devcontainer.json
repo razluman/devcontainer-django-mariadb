@@ -6,15 +6,17 @@
 	"customizations": {
 		"vscode": {
 			"extensions": [
-				// "ms-vscode-remote.remote-containers",
-				// "ecmel.vscode-html-css",
-				// "geddski.macros",
-				// "ms-python.vscode-pylance",
-				// "ms-python.python",
-				// "vscodevim.vim",
-				// "monosans.djlint",
-				// "batisteo.vscode-django",
-				// "ms-python.pylint"
+				"batisteo.vscode-django",
+				"monosans.djlint",
+				"MS-CEINTL.vscode-language-pack-fr",
+				"ecmel.vscode-html-css",
+				"ms-python.isort",
+				"geddski.macros",
+				"ms-python.vscode-pylance",
+				"ms-python.pylint",
+				"ms-python.python",
+				"kopub.pydocstring",
+				"vscodevim.vim"
 			]
 		}
 	},
