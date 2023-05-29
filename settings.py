@@ -61,10 +61,12 @@ INSTALLED_APPS = [
     "corsheaders",
     "phonenumber_field",
     "django_bootstrap5",
+    "iommi",
     "cma.apps.CmaConfig",
 ]
 
 MIDDLEWARE = [
+    "iommi.live_edit.Middleware",
     "django.middleware.security.SecurityMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.common.CommonMiddleware",
@@ -72,6 +74,9 @@ MIDDLEWARE = [
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
+    "iommi.sql_trace.Middleware",
+    "iommi.profiling.Middleware",
+    "iommi.middleware",
 ]
 
 ROOT_URLCONF = f"{env('PROJECT_NAME')}.urls"
