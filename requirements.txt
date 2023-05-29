@@ -1,5 +1,6 @@
 black
 django==3.2.18
+django-bootstrap5
 django-cors-headers
 django-environ
 django-import-export
