@@ -74,7 +74,7 @@ MIDDLEWARE = [
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
 ]
 
-ROOT_URLCONF = "mabox.urls"
+ROOT_URLCONF = f"{env('PROJECT_NAME')}.urls"
 
 TEMPLATES = [
     {
@@ -92,7 +92,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = "mabox.wsgi.application"
+WSGI_APPLICATION = f"{env('PROJECT_NAME')}.wsgi.application"
 
 
 # Database
