@@ -60,6 +60,7 @@ INSTALLED_APPS = [
     "drf_standardized_errors",
     "corsheaders",
     "phonenumber_field",
+    "django_bootstrap5",
     "cma.apps.CmaConfig",
 ]
 
