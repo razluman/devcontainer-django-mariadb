@@ -4,6 +4,7 @@ django-bootstrap5
 django-cors-headers
 django-environ
 django-import-export
+django-htmx
 django-filter
 django-phonenumber-field[phonenumbers]
 django-phonenumbers
