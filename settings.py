@@ -61,6 +61,7 @@ INSTALLED_APPS = [
     "corsheaders",
     "phonenumber_field",
     "django_bootstrap5",
+    "django_htmx",
     "cma.apps.CmaConfig",
 ]
 
@@ -72,6 +73,7 @@ MIDDLEWARE = [
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
+    "django_htmx.middleware.HtmxMiddleware",
 ]
 
 ROOT_URLCONF = f"{env('PROJECT_NAME')}.urls"
