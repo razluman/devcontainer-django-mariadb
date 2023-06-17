@@ -1,4 +1,7 @@
-<div class="pagination" hx-target="{{ target_list }}" hx-swap="innerHTML" hx-push-url="true">
+<div class="pagination"
+     hx-target="{{ hx_target }}"
+     hx-swap="innerHTML"
+     hx-push-url="true">
    <span class="step-links">
       {% if page_obj.has_previous %}
          <a href="?page=1&{{ get_copy.urlencode }}"
