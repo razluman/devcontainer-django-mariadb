@@ -62,6 +62,7 @@ INSTALLED_APPS = [
     "phonenumber_field",
     "django_bootstrap5",
     "django_htmx",
+    "bulma",
     "cma.apps.CmaConfig",
 ]
 
