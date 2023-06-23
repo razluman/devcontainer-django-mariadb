@@ -63,6 +63,8 @@ INSTALLED_APPS = [
     "django_bootstrap5",
     "django_htmx",
     "bulma",
+    "django_tables2",
+    "django_tables2_bulma_template",
     "cma.apps.CmaConfig",
 ]
 
@@ -176,3 +178,5 @@ REST_KNOX = {
 DRF_STANDARDIZED_ERRORS = {"ENABLE_IN_DEBUG_FOR_UNHANDLED_EXCEPTIONS": True}
 
 CORS_ALLOW_ALL_ORIGINS = True
+
+DJANGO_TABLES2_TEMPLATE = "django-tables2/bulma.html"
