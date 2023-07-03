@@ -26,7 +26,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = ''
+SECRET_KEY = 'django-insecure-0-$o9p7c+huq^cdbfd=m3dk+521l9niq$8l6(ubz(x@4b%*t0@'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 # DEBUG = True
@@ -51,6 +51,10 @@ INSTALLED_APPS = [
     'django_bootstrap5',
     'django_tables2',
     'corsheaders',
+    "phonenumber_field",
+    "django_htmx",
+    "bulma",
+    "django_tables2_bulma_template",
     'pgi_currencies.apps.PgiCurrenciesConfig',
 ]
 
@@ -63,6 +67,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    "django_htmx.middleware.HtmxMiddleware",
 ]
 
 ROOT_URLCONF = 'pgi.urls'
@@ -144,8 +149,8 @@ STATIC_ROOT='/home/pgimg/public_html/pgi/static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-SESSION_COOKIE_AGE = 60 * 60 # min * sec
-SESSION_EXPIRE_AT_BROWSER_CLOSE = True
+# SESSION_COOKIE_AGE = 60 * 60 # min * sec
+# SESSION_EXPIRE_AT_BROWSER_CLOSE = True
 SESSION_SAVE_EVERY_REQUEST = True
 
 LOGIN_URL = '/pgi/accounts/login/'
@@ -164,6 +169,6 @@ REST_KNOX = {
 
 DRF_STANDARDIZED_ERRORS = {"ENABLE_IN_DEBUG_FOR_UNHANDLED_EXCEPTIONS": True}
 
-DJANGO_TABLES2_TEMPLATE = "django_tables2/bootstrap5-responsive.html"
+# DJANGO_TABLES2_TEMPLATE = "django_tables2/bootstrap5-responsive.html"
 
 CORS_ALLOW_ALL_ORIGINS = True
