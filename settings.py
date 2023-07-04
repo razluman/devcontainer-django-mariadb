@@ -65,6 +65,7 @@ INSTALLED_APPS = [
     "bulma",
     "django_tables2",
     "django_tables2_bulma_template",
+    "fontawesomefree",
     "cma.apps.CmaConfig",
 ]
 

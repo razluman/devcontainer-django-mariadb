@@ -15,6 +15,7 @@ django-tables2-bulma-template
 djangorestframework
 djlint
 drf-standardized-errors
+fontawesomefree
 httpie
 pylint-django
 PyMySQL
