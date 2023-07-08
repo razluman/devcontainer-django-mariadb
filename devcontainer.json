@@ -19,6 +19,6 @@
 				"vscodevim.vim"
 			]
 		}
-	},
-	"postCreateCommand": "pip install --user -r .devcontainer/requirements.txt"
+	}
+	// "postCreateCommand": "pip install --user -r .devcontainer/requirements.txt"
 }
